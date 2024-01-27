@@ -39,8 +39,7 @@ ol {
 
 .content {
   display: grid;
-  
-  grid-template-columns: minmax(711px, auto) 1fr;
+  grid-template-columns: minmax(auto, 711px) 1fr;
   grid-column-gap: 30px;
   justify-content: center;
   max-width: 1140px;
@@ -59,7 +58,8 @@ ol {
 }
 
 .result__video {
-  min-width: 711px;
+  width: 100%;
+  max-width: 711px;
 }
 
 .search-form {
@@ -78,4 +78,19 @@ ol {
 .content__list {
   max-height: 298px;
   overflow: auto;
+  overflow-x: hidden;
+}
+
+.content__list-item:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.content__video-card {
+  display: grid;
+  grid-template: 1fr / max-content minmax(194px, auto);
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  max-width: 194px;
 }
