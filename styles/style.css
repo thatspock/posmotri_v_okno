@@ -9,13 +9,13 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -35,4 +35,47 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: grid;
+  
+  grid-template-columns: minmax(711px, auto) 1fr;
+  grid-column-gap: 30px;
+  justify-content: center;
+  max-width: 1140px;
+  margin: 133px 30px;
+}
+
+.result {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+.result__video-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 78px;
+}
+
+.result__video {
+  min-width: 711px;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: max-content max-content minmax(194px, auto);
+  grid-column-gap: 40px;
+  justify-content: space-between;
+}
+
+.content__details {
+  display: grid;
+  grid-row-gap: 28px;
+  align-content: space-between;
+}
+
+.content__list {
+  max-height: 298px;
+  overflow: auto;
 }
