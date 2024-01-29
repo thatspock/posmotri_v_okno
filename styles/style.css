@@ -54,7 +54,9 @@ ol {
 .result__video-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 78px;
+  /* padding-top: 78px; */
+  z-index: 2;
+  position: relative;
 }
 
 .result__video {
@@ -79,6 +81,8 @@ ol {
   max-height: 298px;
   overflow: auto;
   overflow-x: hidden;
+  z-index: 2;
+  position: relative;
 }
 
 .content__list-item:not(:last-child) {
@@ -93,4 +97,11 @@ ol {
 
 .content__video-card-thumbnail {
   max-width: 194px;
+}
+
+.preloader {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding-top: 78px;
 }
