@@ -255,6 +255,7 @@ ol {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 15px;
+  align-items: start;
 }
 
 .content__card-link_current {
