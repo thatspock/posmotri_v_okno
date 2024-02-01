@@ -41,6 +41,7 @@ ol {
 .content {
   display: grid;
   grid-template-columns: minmax(auto, 711px) 1fr;
+  grid-template-rows: minmax(auto, 534px);
   grid-column-gap: 30px;
   justify-content: center;
   max-width: 1140px;
@@ -61,6 +62,8 @@ ol {
 
 .result__video {
   width: 100%;
+  max-height: 386px;
+  object-fit: cover;
 }
 
 .search-form {
@@ -77,13 +80,11 @@ ol {
 .content__list {
   position: relative;
   z-index: 2;
+  display: grid;
+  grid-row-gap: 30px;
   max-height: 298px;
   overflow: auto;
   overflow-x: hidden;
-}
-
-.content__list-item:not(:last-child) {
-  padding-bottom: 34px;
 }
 
 .content__video-card {
@@ -93,7 +94,11 @@ ol {
 }
 
 .content__video-card-thumbnail {
+  justify-self: end;
+  width: 100%;
   max-width: 194px;
+  max-height: 103px;
+  object-fit: cover;
 }
 
 .preloader {
@@ -126,11 +131,14 @@ ol {
 }
 
 .content__card-link {
+  display: block;
+  margin: 3px;
   color: #fff;
   text-decoration: none;
 }
 
 .content__video-card-title {
+  padding-bottom: 6px;
   font-family: Oswald;
   font-weight: 700;
   font-size: 30px;
@@ -173,8 +181,7 @@ ol {
 }
 
 .button {
-  align-self: end;
-  height: 32px;
+  height: 34px;
   border: 1px solid #FFF;
   color: #FFF;
   font-family: "Fira Sans Condensed";
@@ -246,4 +253,22 @@ ol {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 15px;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
 }
