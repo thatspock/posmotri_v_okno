@@ -40,11 +40,11 @@ ol {
 
 .content {
   display: grid;
-  grid-template: minmax(auto, 534px) / minmax(auto, 711px) 1fr;
   grid-column-gap: 30px;
   justify-content: center;
   max-width: 1140px;
   margin: 133px 30px;
+  grid-template: minmax(auto, 534px) / minmax(auto, 711px) 1fr;
 }
 
 .result {
