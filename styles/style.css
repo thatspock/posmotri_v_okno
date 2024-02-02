@@ -83,7 +83,6 @@ ol {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-row-gap: 30px;
   max-height: 298px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -260,6 +259,10 @@ ol {
 .content__card-link_current {
   box-shadow: 0 0 0 2px #545050;
   background-color: #545050;
+}
+
+.content__list-item:not(:last-child) {
+  padding-block-end: 30px;
 }
 
 .content__list-item:hover {
