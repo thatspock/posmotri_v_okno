@@ -45,7 +45,7 @@ ol {
   display: grid;
   grid-column-gap: 30px;
   justify-content: center;
-  min-width: 1140px;
+  max-width: 1140px;
   grid-template: minmax(auto, 534px) / minmax(auto, 711px) 1fr;
 }
 
@@ -86,6 +86,7 @@ ol {
   grid-row-gap: 30px;
   max-height: 298px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content__video-card {
@@ -177,7 +178,7 @@ ol {
 }
 
 .button {
-  height: 34px;
+  min-height: 34px;
   border: 1px solid #fff;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
